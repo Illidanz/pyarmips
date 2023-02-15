@@ -7,4 +7,5 @@ Python interface for armips.
 ## Usage
 ```import pyarmips
 
-pyarmips.run("bin_patch.asm")```
+pyarmips.run("bin_patch.asm")
+```
