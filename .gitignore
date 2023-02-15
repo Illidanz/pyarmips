@@ -5,3 +5,4 @@ dist
 *.whl
 *.egg-info
 notes.md
+.vscode
