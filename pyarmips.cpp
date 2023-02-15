@@ -10,11 +10,11 @@ extern "C"
         char *filename = NULL;
         char *tempFilename = NULL;
         char *symFilename = NULL;
-        int *symFileVersion = NULL;
-        int *useAbsoluteFilenames = NULL;
-        int *errorOnWarning = NULL;
-        int *silent = NULL;
-        int *showStats = NULL;
+        int symFileVersion = 0;
+        int useAbsoluteFilenames = 1;
+        int errorOnWarning = 0;
+        int silent = 0;
+        int showStats = 0;
 
         static char *kwlist[] = {"filename", "tempFilename", "symFilename", "symFileVersion",
                                  "useAbsoluteFilenames", "errorOnWarning", "silent", "showStats",
@@ -30,11 +30,11 @@ extern "C"
         arguments.inputFileName = filename;
         arguments.tempFileName = tempFilename == NULL ? "" : tempFilename;
         arguments.symFileName = symFilename == NULL ? "" : symFilename;
-        arguments.symFileVersion = symFileVersion == NULL ? 0 : *symFileVersion;
-        arguments.useAbsoluteFileNames = useAbsoluteFilenames == NULL || *useAbsoluteFilenames == 1;
-        arguments.errorOnWarning = errorOnWarning != NULL && *errorOnWarning == 1;
-        arguments.silent = silent != NULL && *silent == 1;
-        arguments.showStats = showStats != NULL && *showStats == 1;
+        arguments.symFileVersion = symFileVersion;
+        arguments.useAbsoluteFileNames = useAbsoluteFilenames == 1;
+        arguments.errorOnWarning = errorOnWarning == 1;
+        arguments.silent = silent == 1;
+        arguments.showStats = showStats == 1;
         bool result = runArmips(arguments);
         return PyBool_FromLong((long)result);
     }
