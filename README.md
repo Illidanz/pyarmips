@@ -2,10 +2,11 @@
 Python interface for armips.
 
 ## Installation
-```pip install pyarmips```
+`pip install pyarmips`
 
 ## Usage
-```import pyarmips
+```
+import pyarmips
 
 pyarmips.run("bin_patch.asm")
 ```

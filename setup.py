@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 if not os.name == 'nt':
-    EXTRA_COMPILE_ARGS = ["-std:c++17"]
+    EXTRA_COMPILE_ARGS = ["-std=c++17"]
     LIBRARIES = []
 else:
     EXTRA_COMPILE_ARGS = ["/std:c++17"]
