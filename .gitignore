@@ -1,0 +1,6 @@
+__pycache__
+build
+dist
+*.pyd
+*.egg-info
+notes.md
