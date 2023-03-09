@@ -1,0 +1,12 @@
+include armips/Archs/*.h
+include armips/Archs/ARM/*.h
+include armips/Archs/MIPS/*.h
+include armips/Archs/SuperH/*.h
+include armips/Commands/*.h
+include armips/Core/*.h
+include armips/Core/ELF/*.h
+include armips/ext/filesystem/include/ghc/*.hpp
+include armips/ext/tinyformat/*.h
+include armips/Main/*.h
+include armips/Parser/*.h
+include armips/Util/*.h
