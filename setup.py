@@ -21,7 +21,7 @@ for dir in ["Archs", "Archs/ARM", "Archs/MIPS", "Archs/SuperH", "Commands", "Cor
 
 def main():
     setup(name="pyarmips",
-          version="0.11.1",
+          version="0.11.2",
           author="Illidan",
           description="Python interface for armips.",
           long_description=long_description,
