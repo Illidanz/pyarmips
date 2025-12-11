@@ -27,9 +27,9 @@ def main():
           long_description=long_description,
           long_description_content_type="text/markdown",
           url="https://github.com/Illidanz/pyarmips",
+          license="MIT",
           classifiers=[
               "Programming Language :: Python :: 3",
-              "License :: OSI Approved :: MIT License",
           ],
           ext_modules=[Extension("pyarmips", sources, include_dirs=INCLUDES, libraries=LIBRARIES, extra_compile_args=EXTRA_COMPILE_ARGS)]
         )
